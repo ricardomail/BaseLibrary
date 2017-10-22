@@ -2,6 +2,7 @@ package com.test.nice.baselibrary.mvcbase;
 
 import com.test.nice.baselibrary.base.BaseActivity;
 
+import io.reactivex.Flowable;
 import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.disposables.Disposable;
 
