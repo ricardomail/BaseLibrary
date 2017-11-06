@@ -1,5 +1,7 @@
 package com.test.nice.baselibrary.mvpbase;
 
+import android.content.Context;
+
 import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.disposables.Disposable;
 
@@ -11,7 +13,10 @@ import io.reactivex.disposables.Disposable;
  */
 public class BasePresenterImpl<T> implements BasePresenter{
     public T mView;
+    private Context mContext;
     protected CompositeDisposable mCompositeDisposable;
+
+    public BasePresenterImpl(Context context){}
 
     protected void attach(T mView){
         this.mView = mView;
